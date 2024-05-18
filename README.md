@@ -44,3 +44,12 @@ Sumber data berupa file .csv dari Indiegogo Crowdfunding 2022. Atribut-atribut d
 
 ### 3. Implementasi 🛠️
 Pengerjaan proyek akan mencakup pengembangan Data Mart, implementasi ETL, dan perancangan dashboard. Metode Kimball Approach akan digunakan untuk memastikan kualitas dan akurasi data yang disajikan dalam dashboard.
+![Dashboard 1](https://github.com/agnestsiburian/Proyek-DWBI-G3-Indiegogo-Crowdfunding/assets/89499270/356a900a-c376-4e08-a4f6-debedd354f75)
+
+### 4. Contributors
+Group 3 Data Warehouse and Business Intelligence
+1. 12S21036 - Astri Yuliana Siahaan
+2. 12S21037 - Immanuella Eklesia Lumbantobing
+3. 12S21055 - Lamria Magdalena Tampubolon
+4. 12S21057 - Agnes Theresia Siburian
+5. 12S21058 - Grace Christina Yohanna Situmorang
