@@ -1,0 +1,86 @@
+<Schema name="New Schema1">
+  <Dimension type="StandardDimension" visible="true" name="Category">
+    <Hierarchy name="DimCategory" visible="true" hasAll="true" allMemberName="All Categories" primaryKey="category_id">
+      <Table name="Dim Category" schema="dbo" alias="">
+      </Table>
+      <Level name="Category" visible="true" column="category_id" nameColumn="category" ordinalColumn="category_id" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+    </Hierarchy>
+  </Dimension>
+  <Dimension type="StandardDimension" visible="true" name="Currency">
+    <Hierarchy name="DimCurrency" visible="true" hasAll="true" allMemberName="All Currency" primaryKey="currency_id">
+      <Table name="Dim Currency" schema="dbo" alias="">
+      </Table>
+      <Level name="Currency" visible="true" column="currency" nameColumn="currency" ordinalColumn="currency_id" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+    </Hierarchy>
+  </Dimension>
+  <Dimension type="StandardDimension" visible="true" name="Product">
+    <Hierarchy name="DimProduct" visible="true" hasAll="true" allMemberName="All Products" primaryKey="product_id">
+      <Table name="Dim Product" schema="dbo" alias="">
+      </Table>
+      <Level name="Product" visible="true" column="product_stage" nameColumn="product_stage" ordinalColumn="product_id" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+    </Hierarchy>
+  </Dimension>
+  <Dimension type="StandardDimension" visible="true" name="Tag">
+    <Hierarchy name="Dim Tag" visible="true" hasAll="true" allMemberName="All Tags" primaryKey="tag_id">
+      <Table name="Dim Tag" schema="dbo" alias="">
+      </Table>
+      <Level name="Tag" visible="true" column="tag" nameColumn="tag" ordinalColumn="tag_id" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+    </Hierarchy>
+  </Dimension>
+  <Dimension type="StandardDimension" visible="true" name="Project">
+    <Hierarchy name="DimProject" visible="true" hasAll="true" allMemberName="All Projects">
+      <Table name="Dim Project" schema="dbo" alias="">
+      </Table>
+      <Level name="Category" visible="true" column="category" nameColumn="category" ordinalColumn="project_id" type="String" uniqueMembers="false" hideMemberIf="Never">
+      </Level>
+      <Level name="Project Type" visible="true" column="project_type" nameColumn="project_type" ordinalColumn="project_id" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="Tag" visible="true" column="project_type" nameColumn="tag" ordinalColumn="project_id" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+    </Hierarchy>
+  </Dimension>
+  <Dimension type="TimeDimension" visible="true" name="Time">
+    <Hierarchy name="DimTime" visible="true" hasAll="true" allMemberName="All Times" primaryKey="project_id">
+      <Table name="Dim Time" schema="dbo" alias="">
+      </Table>
+      <Level name="Open Date" visible="true" column="open_date" type="Date" uniqueMembers="false" levelType="TimeDays">
+      </Level>
+      <Level name="Open Time" visible="true" column="open_time" nameColumn="open_time" type="Time" uniqueMembers="false" levelType="TimeHours">
+      </Level>
+      <Level name="Close Date" visible="true" column="close_date" nameColumn="close_date" type="Date" uniqueMembers="false" levelType="TimeDays">
+      </Level>
+      <Level name="Close Time" visible="true" column="close_time" nameColumn="close_time" type="Time" uniqueMembers="false" levelType="TimeHours">
+      </Level>
+    </Hierarchy>
+  </Dimension>
+  <Cube name="Indiegogo Crowfunding" visible="true" cache="true" enabled="true">
+    <Table name="Fact Indiegogo" schema="dbo">
+    </Table>
+    <DimensionUsage source="Project" name="Project" visible="true" foreignKey="project_id">
+    </DimensionUsage>
+    <DimensionUsage source="Currency" name="Currency" visible="true" foreignKey="currency_id">
+    </DimensionUsage>
+    <DimensionUsage source="Category" name="Category" visible="true" foreignKey="category_id">
+    </DimensionUsage>
+    <DimensionUsage source="Product" name="Product" visible="true" foreignKey="product_id">
+    </DimensionUsage>
+    <DimensionUsage source="Tag" name="Tag" visible="true" foreignKey="tag_id">
+    </DimensionUsage>
+    <DimensionUsage source="Time" name="Open Date" visible="true" foreignKey="open_date">
+    </DimensionUsage>
+    <DimensionUsage source="Time" name="Close Date" visible="true" foreignKey="close_date">
+    </DimensionUsage>
+    <Measure name="Fund Raised Amount" column="funds_raised_amount" formatString="#.###" aggregator="sum" visible="true">
+    </Measure>
+    <Measure name="Perk Goal Percentage" column="perk_goal_percentage" aggregator="count" visible="true">
+    </Measure>
+    <Measure name="Is Proven" column="is_proven" datatype="Boolean" aggregator="distinct-count" visible="true">
+    </Measure>
+    <Measure name="Fund Raised Percentage" column="funds_raised_percent" formatString="#.##" aggregator="avg" visible="true">
+    </Measure>
+  </Cube>
+</Schema>
