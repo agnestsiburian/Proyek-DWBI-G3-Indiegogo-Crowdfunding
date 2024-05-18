@@ -1,6 +1,6 @@
 ## Proyek-DWBI-G3-Indiegogo-Crowdfunding 🚀
 
-### 1. Pendahuluan 🌟
+### 1. Pendahuluan 
 
 #### 1.1 Latar Belakang
 Crowdfunding telah menjadi fenomena yang semakin populer sebagai alternatif untuk mendanai berbagai jenis proyek. Platform seperti Indiegogo memfasilitasi penggalangan dana dari masyarakat luas. Namun, semakin banyaknya proyek membuat analisis dan pengambilan keputusan menjadi sulit bagi pengguna. Sistem Gudang Data dan Kecerdasan Bisnis (Business Intelligence) dapat menjadi solusi dengan menyajikan informasi yang relevan dan akurat.
@@ -43,13 +43,16 @@ Crowdfunding telah menjadi fenomena yang semakin populer sebagai alternatif untu
 Sumber data berupa file .csv dari Indiegogo Crowdfunding 2022. Atribut-atribut data disajikan dalam tabel untuk perancangan struktur database.
 
 ### 3. Implementasi 🛠️
-Pengerjaan proyek akan mencakup pengembangan Data Mart, implementasi ETL, dan perancangan dashboard. Metode Kimball Approach akan digunakan untuk memastikan kualitas dan akurasi data yang disajikan dalam dashboard.
+Pengerjaan proyek akan mencakup pengembangan Data Mart, implementasi ETL, dan perancangan dashboard. Metode Kimball Approach akan digunakan untuk memastikan kualitas dan akurasi data yang disajikan dalam dashboard berikut:
+
 ![Dashboard 1](https://github.com/agnestsiburian/Proyek-DWBI-G3-Indiegogo-Crowdfunding/assets/89499270/356a900a-c376-4e08-a4f6-debedd354f75)
+
+Produktivitas, Kamera & Gear, Energi & Green Tech, dan Transportasi. Sebaliknya, kategori dengan proyek paling sedikit adalah Spiritualitas dan Podcast/Blog. Diagram pie menunjukkan kesuksesan penggalangan dana di berbagai kategori, sementara grafik "Classification of Currencies by Category" memberikan wawasan tentang distribusi geografis dan preferensi pasar regional. Grafik garis menunjukkan tren pendanaan bulanan untuk kategori terbesar, membantu investor dalam perencanaan investasi yang lebih strategis. Dashboard ini memberikan data komprehensif untuk memahami dinamika pasar crowdfunding di Indiegogo, mendukung pengambilan keputusan investasi yang lebih terinformasi.
 
 ### 4. Contributors
 Group 3 Data Warehouse and Business Intelligence
-1. 12S21036 - Astri Yuliana Siahaan
-2. 12S21037 - Immanuella Eklesia Lumbantobing
-3. 12S21055 - Lamria Magdalena Tampubolon
-4. 12S21057 - Agnes Theresia Siburian
-5. 12S21058 - Grace Christina Yohanna Situmorang
+1. 12S21036 [Astri Yuliana Siahaan ](github.com/astri016)
+2. 12S21037 [Immanuella Eklesia Lumbantobing](github.com/immanuella793)
+3. 12S21055 [Lamria Magdalena Tampubolon](github.com/lamriatamp)
+4. 12S21057 [Agnes Theresia Siburian](github.com/agnestsiburian)
+5. 12S21058 [Grace Christina Yohanna Situmorang](github.com/gracesitumorang)
