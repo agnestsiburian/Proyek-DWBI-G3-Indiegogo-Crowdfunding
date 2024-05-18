@@ -1,1 +1,46 @@
-# Proyek-DWBI-G3-Indiegogo-Crowdfunding
+## Proyek-DWBI-G3-Indiegogo-Crowdfunding 🚀
+
+### 1. Pendahuluan 🌟
+
+#### 1.1 Latar Belakang
+Crowdfunding telah menjadi fenomena yang semakin populer sebagai alternatif untuk mendanai berbagai jenis proyek. Platform seperti Indiegogo memfasilitasi penggalangan dana dari masyarakat luas. Namun, semakin banyaknya proyek membuat analisis dan pengambilan keputusan menjadi sulit bagi pengguna. Sistem Gudang Data dan Kecerdasan Bisnis (Business Intelligence) dapat menjadi solusi dengan menyajikan informasi yang relevan dan akurat.
+
+#### 1.2 Tujuan Pengerjaan Proyek
+1. Mengimplementasikan dashboard sederhana berbasis Data Mart untuk visualisasi data crowdfunding.
+2. Membantu pengambil keputusan dalam menganalisis data proyek dengan akurat.
+3. Menerapkan konsep Data Warehouse dan Business Intelligence.
+
+#### 1.3 Ruang Lingkup
+- Sumber Data: Data dari Indiegogo Crowdfunding 2022.
+- Pendekatan Pengembangan: Metode Kimball Approach.
+- Komponen Pengembangan:
+  - Data Mart: JSON
+  - ETL: Pentaho
+  - Aplikasi BI: Tableau
+- Pengembangan Data Mart: Skema dimensional (star schema) dan proses ETL.
+- Perancangan Dashboard: Visualisasi data crowdfunding melalui widget grafik, tabel, dan diagram.
+
+### 2. Analisis dan Desain 💡
+
+#### 2.1 Pertanyaan Analisis
+1. Kategori dengan jumlah dana terkumpul tertinggi?
+2. Kategori dengan persentase dana terpenuhi tertinggi?
+3. Kategori dengan pendanaan tertinggi per bulan?
+4. Kategori dengan jumlah proyek terendah?
+
+#### 2.2 Arsitektur Sistem
+- Sumber Data: File CSV dari Indiegogo Crowdfunding 2022.
+- ETL: Manajemen ekstraksi, transformasi, dan pemuatan data.
+- Server Presentasi dan Aplikasi BI: Visualisasi data, dasbor interaktif, pelaporan, dan analitik prediktif.
+- Komponen Utama:
+  - Data Sumber
+  - Sistem ETL
+  - Server Presentasi dan Aplikasi BI
+- Arsitektur Sistem Terdiri dari:
+  - High Level Architecture of Indiegogo Crowdfunding
+
+#### 2.3 Sumber Data
+Sumber data berupa file .csv dari Indiegogo Crowdfunding 2022. Atribut-atribut data disajikan dalam tabel untuk perancangan struktur database.
+
+### 3. Implementasi 🛠️
+Pengerjaan proyek akan mencakup pengembangan Data Mart, implementasi ETL, dan perancangan dashboard. Metode Kimball Approach akan digunakan untuk memastikan kualitas dan akurasi data yang disajikan dalam dashboard.
